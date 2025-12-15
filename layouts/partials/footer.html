@@ -167,6 +167,34 @@ $(function(){
       
 </script>
 <script id="dsq-count-scr" src="//{{ .Site.Config.Services.Disqus.Shortname }}.disqus.com/count.js" async></script>
+<script>
+    // 1. Reemplaza esta variable con la URL de invocación de tu API Gateway.
+    // DEBE ser la URL completa con la etapa: https://[ID].execute-api.[REGION].amazonaws.com/prod/visits
+    const apiUrl = 'https://s36ep23e12.execute-api.us-east-1.amazonaws.com/prod/visits'; 
+    
+    // Función que se ejecuta cuando el navegador termina de cargar la página
+    window.onload = function() {
+        // Hacemos una llamada GET a la API del contador
+        fetch(apiUrl)
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                // Si la llamada falla, simplemente no incrementamos, pero no detenemos la página
+                console.error('La llamada al contador falló con estado:', response.status);
+                throw new Error('Fallo en la llamada al contador.');
+            })
+            .then(data => {
+                console.log('Contador de visitas actualizado. Visitas totales:', data.visits);
+                // Si tienes un elemento HTML en tu CV para mostrar el número (ej. <span id="visits-count"></span>)
+                // puedes actualizarlo aquí:
+                // document.getElementById('visits-count').innerText = data.visits;
+            })
+            .catch(error => {
+                console.error('Error al actualizar el contador:', error);
+            });
+    };
+</script>
 <!-- End Delayed Disqus -->
 {{ end }}
 
