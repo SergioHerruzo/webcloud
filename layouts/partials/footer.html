@@ -106,6 +106,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
 {{- end -}}
 <script src="{{ "js/load-photoswipe.js" | absURL }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const apiUrl = 'https://s36ep23e12.execute-api.us-east-1.amazonaws.com/prod/visits';
+        
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => console.log("Visitas actualizadas:", data.visits))
+            .catch(err => console.error("Error en el contador:", err));
+    });
+</script>
 
 <!-- Google Custom Search Engine -->
 {{ if .Site.Params.gcse }}
@@ -136,17 +146,6 @@
     var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
     g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
   })();
-</script>
-<script>
-    // Este código se ejecutará en cuanto cargue la web
-    document.addEventListener("DOMContentLoaded", function() {
-        const apiUrl = 'https://s36ep23e12.execute-api.us-east-1.amazonaws.com/prod/visits';
-        
-        fetch(apiUrl)
-            .then(response => response.json())
-            .then(data => console.log("Visitas actualizadas:", data.visits))
-            .catch(err => console.error("Error en el contador:", err));
-    });
 </script>
 <noscript>
 <!-- Piwik Image Tracker -->
