@@ -20,6 +20,8 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  homeTitle = "¡Hola, soy Sergio Herruzo!"
+  description = "Bienvenidos a mi sitio web"
   subtitle = "Build a beautiful and simple website in minutes"
   mainSections = ["post","posts"]
   logo = "img/avatar-icon.png" # Expecting square dimensions
