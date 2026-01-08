@@ -1,6 +1,6 @@
 baseURL = 'https://www.aws10.dominioshm.cat/'
 languageCode = 'en-us'
-title = 'Projecto AWS'
+title = 'Sergio Herruzo'
 
 [params]
     title = "Sergio Herruzo"
