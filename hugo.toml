@@ -1,0 +1,32 @@
+baseURL = 'https://www.aws10.dominioshm.cat/'
+languageCode = 'en-us'
+title = 'Projecto AWS'
+
+[params]
+    title = "Sergio Herruzo"
+    subtitle = "Estudiante de Administración de Sistemas | Cloud Enthusiast"
+
+    [params.navbar]
+        enable = true
+
+    # --- PORTADA ---
+    [params.hero]
+        enable = true
+        title = "Hola, soy Sergio Herruzo"
+        subtitle = "Estudiante de Administración de Sistemas en Red"
+
+    # --- SOBRE MÍ ---
+    [params.about]
+        enable = true
+        title = "Sobre mí"
+        content = "Estudiante proactivo interesado en la administración de sistemas. Tengo conocimientos en programación y gestión de bases de datos. Busco un puesto que me permita empezar y desarrollarme en un entorno profesional, contribuyendo con mis habilidades y entusiasmo por un éxito común."
+
+    # --- SECCIONES ---
+    [params.education]
+        enable = true
+
+    [params.experience]
+        enable = true
+
+    [params.skills]
+        enable = true
