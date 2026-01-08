@@ -1,11 +1,10 @@
 baseURL = 'https://www.aws10.dominioshm.cat/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Projecto AWS'
 
 [params]
-    title = "Pablo Garcia Martinez"
+    title = "Sergio Herruzo"
     subtitle = "Estudiante de Administración de Sistemas | Cloud Enthusiast"
-    favicon = "/images/favicon.ico" 
 
     [params.navbar]
         enable = true
@@ -13,9 +12,8 @@ title = 'My New Hugo Site'
     # --- PORTADA ---
     [params.hero]
         enable = true
-        title = "Hola, soy Pablo Garcia"
+        title = "Hola, soy Sergio Herruzo"
         subtitle = "Estudiante de Administración de Sistemas en Red"
-        avatar = "images/avatar.jpg"  #foto con este nombre
 
     # --- SOBRE MÍ ---
     [params.about]
