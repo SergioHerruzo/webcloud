@@ -1,112 +1,32 @@
-# Configuración base del sitio
 baseURL = 'https://www.aws10.dominioshm.cat/'
-languageCode = 'es-ES'
-defaultContentLanguage = 'es'
+languageCode = 'en-us'
 title = 'Sergio Herruzo'
 
-# Configuración de construcción
-[build]
-  writeStats = true
-
-# Configuración de markup
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-# Parámetros personalizados del sitio
 [params]
-  # Información general
-  title = "Home"
-  subtitle = "Estudiante de Administración de Sistemas | Cloud Enthusiast"
-  description = "Portfolio de Sergio Herruzo - Estudiante de Administración de Sistemas en Red"
-  author = "Sergio Herruzo"
-  
-  # SEO y metadata
-  keywords = ["administración de sistemas", "cloud", "AWS", "DevOps", "portfolio"]
-  
-  # Navbar
-  [params.navbar]
-    enable = true
-    fixed = false
-    
-  # Sección Hero (Portada)
-  [params.hero]
-    enable = true
-    title = "Hola, soy Sergio Herruzo"
-    subtitle = "Estudiante de Administración de Sistemas en Red"
-    background = "" # Opcional: ruta a imagen de fondo
-    
-  # Sección Sobre Mí
-  [params.about]
-    enable = true
-    title = "Sobre mí"
-    content = """
-    Estudiante proactivo interesado en la administración de sistemas. 
-    Tengo conocimientos en programación y gestión de bases de datos. 
-    Busco un puesto que me permita empezar y desarrollarme en un entorno profesional, 
-    contribuyendo con mis habilidades y entusiasmo por un éxito común.
-    """
-    
-  # Sección Habilidades (opcional)
-  [params.skills]
-    enable = true
-    title = "Habilidades"
-    
-  # Sección Proyectos (opcional)
-  [params.projects]
-    enable = true
-    title = "Proyectos"
-    
-  # Sección Contacto (opcional)
-  [params.contact]
-    enable = true
-    title = "Contacto"
-    email = "" # Añade tu email
-    
-  # Redes sociales (opcional)
-  [params.social]
-    github = "" # Tu usuario de GitHub
-    linkedin = "" # Tu usuario de LinkedIn
-    twitter = "" # Tu usuario de Twitter
+    title = "Home"
+    subtitle = "Estudiante de Administración de Sistemas | Cloud Enthusiast"
 
-# Menú de navegación
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Inicio"
-    url = "/"
-    weight = 1
-    
-  [[menu.main]]
-    identifier = "about"
-    name = "Sobre mí"
-    url = "/#about"
-    weight = 2
-    
-  [[menu.main]]
-    identifier = "skills"
-    name = "Habilidades"
-    url = "/#skills"
-    weight = 3
-    
-  [[menu.main]]
-    identifier = "projects"
-    name = "Proyectos"
-    url = "/#projects"
-    weight = 4
-    
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contacto"
-    url = "/#contact"
-    weight = 5
+    [params.navbar]
+        enable = true
 
-# Configuración de privacidad
-[privacy]
-  [privacy.googleAnalytics]
-    disable = true
-  [privacy.twitter]
-    enableDNT = true
-  [privacy.youtube]
-    privacyEnhanced = true
+    # --- PORTADA ---
+    [params.hero]
+        enable = true
+        title = "Hola, soy Sergio Herruzo"
+        subtitle = "Estudiante de Administración de Sistemas en Red"
+
+    # --- SOBRE MÍ ---
+    [params.about]
+        enable = true
+        title = "Sobre mí"
+        content = "Estudiante proactivo interesado en la administración de sistemas. Tengo conocimientos en programación y gestión de bases de datos. Busco un puesto que me permita empezar y desarrollarme en un entorno profesional, contribuyendo con mis habilidades y entusiasmo por un éxito común."
+
+    # --- SECCIONES ---
+    [params.education]
+        enable = true
+
+    [params.experience]
+        enable = true
+
+    [params.skills]
+        enable = true
