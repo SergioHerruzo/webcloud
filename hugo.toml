@@ -4,8 +4,8 @@ title = 'Sergio Herruzo'
 
 [params]
     title = "Home"
-    subtitle = "Estudiante de Administración de Sistemas | Cloud Enthusiast"
-
+    subtitle = "Estudiante de Administración de Sistemas"
+    
     [params.navbar]
         enable = true
 
