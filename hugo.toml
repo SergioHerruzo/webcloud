@@ -5,8 +5,6 @@ title = 'Sergio Herruzo'
 [params]
     title = "Home"
     subtitle = "Estudiante de Administración de Sistemas | Cloud Enthusiast"
-    title = "Sobre mí"
-    content = "Estudiante proactivo interesado en la administración de sistemas. Tengo conocimientos en programación y gestión de bases de datos. Busco un puesto que me permita empezar y desarrollarme en un entorno profesional, contribuyendo con mis habilidades y entusiasmo por un éxito común."
 
     [params.navbar]
         enable = true
@@ -20,6 +18,8 @@ title = 'Sergio Herruzo'
     # --- SOBRE MÍ ---
     [params.about]
         enable = true
+        title = "Sobre mí"
+        content = "Estudiante proactivo interesado en la administración de sistemas. Tengo conocimientos en programación y gestión de bases de datos. Busco un puesto que me permita empezar y desarrollarme en un entorno profesional, contribuyendo con mis habilidades y entusiasmo por un éxito común."
 
     # --- SECCIONES ---
     [params.education]
