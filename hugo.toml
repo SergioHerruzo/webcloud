@@ -1,7 +1,6 @@
 baseURL = 'https://cv.aws10.dominioshm.cat/'
 languageCode = 'en-us'
-title = 'a'
+title = 'Sergio Herruzo'
 
 [params]
-    title = "Home"
     subtitle = "Estudiante de Administración de Sistemas"
