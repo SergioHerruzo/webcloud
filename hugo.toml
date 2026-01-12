@@ -1,0 +1,57 @@
+baseURL = 'https://cv.aws10.dominioshm.cat/'
+languageCode = 'es-es'
+title = 'Sergio Herruzo - CV'
+theme = 'beautifulhugo'
+
+[params]
+  # Información principal
+  title = "Sergio Herruzo"
+  subtitle = "Estudiante de Administración de Sistemas"
+  
+  # URL del sitio
+  homeTitle = "Sergio Herruzo"
+  
+  # Configuración del logo y avatar (opcional)
+  # logo = "img/avatar.jpg"
+  # favicon = "img/favicon.ico"
+  
+  # Fecha en los posts
+  dateFormat = "2 January 2006"
+  
+  # Sección "Sobre mí"
+  [params.author]
+    name = "Sergio Herruzo"
+    website = "https://cv.aws10.dominioshm.cat"
+    email = "sergio@example.com"  # Cambia por tu email real
+    # facebook = "username"
+    # github = "username"
+    # gitlab = "username"
+    # twitter = "username"
+    # linkedin = "username"
+
+# Configuración del menú de navegación
+[[menu.main]]
+    name = "Inicio"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "Sobre mí"
+    url = "page/about/"
+    weight = 2
+
+[[menu.main]]
+    name = "Proyectos"
+    url = "page/projects/"
+    weight = 3
+
+[[menu.main]]
+    name = "Contacto"
+    url = "page/contact/"
+    weight = 4
+
+# Configuración de markup
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
